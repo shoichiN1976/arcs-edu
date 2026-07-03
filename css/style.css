@@ -352,3 +352,34 @@ html[data-theme="dark"] .card, html[data-theme="dark"] .feature-main {
   box-shadow: 0 2px 8px rgba(0,0,0,.25), 0 8px 28px rgba(0,0,0,.25);
 }
 html[data-theme="dark"] .notes { border-left-color: var(--color-indigo); }
+
+/* ---------- 長編読み物（手紙） ---------- */
+.letter h2 { font-size: 1.35rem; letter-spacing: var(--ls-heading); font-weight: 600; margin-top: 3.2em; line-height: 1.7; }
+.letter h2::after { content: ""; display: block; width: 2em; height: 1px; background: var(--color-accent); margin-top: 0.7rem; }
+.letter h3 { font-size: 1.08rem; letter-spacing: 0.06em; font-weight: 600; margin-top: 2.4em; color: var(--color-ink); }
+.letter blockquote {
+  margin: 1.8em 0 0; padding: 1.1em 1.5em;
+  background: var(--color-bg-alt); border-left: 3px solid var(--color-accent);
+  border-radius: 0 8px 8px 0; font-size: 0.98rem;
+}
+.letter blockquote p { margin-top: 0.8em; }
+.letter blockquote p:first-child { margin-top: 0; }
+.letter figure { margin: 2.4em 0 0; }
+.letter figure img { border-radius: 8px; border: 1px solid var(--color-line); background: #fff; padding: 6px; box-sizing: border-box; width: 100%; }
+.letter figcaption { font-family: var(--font-sans); font-size: 0.8rem; color: var(--color-ink-light); text-align: center; margin-top: 0.7em; }
+.letter table { width: 100%; border-collapse: collapse; margin-top: 1.8em; font-size: 0.92rem; }
+.letter th, .letter td { border-bottom: 1px solid var(--color-line); padding: 0.55em 0.7em; text-align: left; vertical-align: top; }
+.letter th { font-family: var(--font-sans); font-size: 0.8rem; letter-spacing: 0.08em; color: var(--color-ink-light); }
+.letter td:first-child { white-space: nowrap; color: var(--color-ink-light); }
+.letter sup a { color: var(--color-indigo); text-decoration: none; font-size: 0.72em; padding: 0 1px; }
+.letter sup a:hover { color: var(--color-accent); }
+.epigraph { text-align: center; margin: 2.5em auto 0; max-width: 34em; color: var(--color-ink); font-size: 1.02rem; line-height: 2.1; }
+.epigraph .src { display: block; margin-top: 1em; font-size: 0.82rem; color: var(--color-ink-light); }
+.footnotes { max-width: var(--measure); margin: 4rem auto 0; padding: 2rem 1.25rem 0; border-top: 1px solid var(--color-line); }
+.footnotes h2 { font-family: var(--font-sans); font-size: 0.85rem; letter-spacing: 0.18em; color: var(--color-ink-light); }
+.footnotes ol { margin: 1.2rem 0 0 1.4em; font-size: 0.85rem; line-height: 1.9; color: var(--color-ink-light); }
+.footnotes li { margin-top: 0.8em; }
+.footnotes li:target { color: var(--color-ink); background: var(--color-bg-alt); border-radius: 6px; padding: 0.4em 0.6em; }
+.letter .sign { text-align: right; margin-top: 3em; }
+.letter .sign .name { font-size: 1.15rem; letter-spacing: 0.2em; font-weight: 600; }
+.letter .sign .date { font-size: 0.88rem; color: var(--color-ink-light); }
