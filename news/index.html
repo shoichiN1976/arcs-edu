@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ニューストピック — 教育研究所ARCS</title>
 <meta name="description" content="教育と子育てをめぐる時事の話題を短くお届けします。">
-<link rel="stylesheet" href="../css/tokens.css">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/tokens.css?v=3">
+<link rel="stylesheet" href="../css/style.css?v=3">
+<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(!t){t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}document.documentElement.dataset.theme=t})();</script>
 </head>
 <body>
 
@@ -17,7 +18,6 @@
       <span class="en">Act Research Counsel Store</span>
     </a>
     <input type="checkbox" id="nav-toggle" aria-hidden="true">
-    <label class="nav-btn" for="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></label>
     <nav class="site">
       <ul>
         <li><a href="../about.html">ARCSとは</a></li>
@@ -30,6 +30,10 @@
         <li><a href="../contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="ライト／ダーク表示の切り替え"><svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"/></svg><svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.4 14.2A8.4 8.4 0 0 1 9.8 3.6a8.4 8.4 0 1 0 10.6 10.6z"/></svg></button>
+      <label class="nav-btn" for="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></label>
+    </div>
   </div>
 </header>
 
@@ -73,5 +77,6 @@
   <p class="copyright">© 2026 一般社団法人 教育研究所ARCS</p>
 </footer>
 
+<script src="../js/main.js" defer></script>
 </body>
 </html>

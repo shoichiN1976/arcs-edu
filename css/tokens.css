@@ -2,6 +2,7 @@
    教育研究所ARCS デザイントークン
    トーン: 暮しの手帖（明朝・余白・生成り・手仕事の温かさ）
    このファイルの値以外を直書きしない
+   ダークモード: html[data-theme="dark"] で全変数を上書き（ファイル末尾）
    ============================================ */
 
 :root {
@@ -44,4 +45,19 @@
   --radius: 6px;
   --shadow: 0 1px 3px rgba(51, 48, 42, 0.08);
   --content-width: 1080px;
+}
+
+/* ============================================
+   ダークモード（夜の紙面 — 黒ではなく「灯りを落とした部屋」）
+   ============================================ */
+html[data-theme="dark"] {
+  --color-bg: #23211c;
+  --color-bg-alt: #2b2822;
+  --color-paper: #2e2b25;
+  --color-ink: #e9e3d3;
+  --color-ink-light: #a89f8c;
+  --color-accent: #d0604a;
+  --color-accent-soft: #e0765f;
+  --color-indigo: #93a5cf;
+  --color-line: #403c33;
 }

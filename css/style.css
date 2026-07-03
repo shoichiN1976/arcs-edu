@@ -20,6 +20,7 @@ body {
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   letter-spacing: var(--ls-body);
+  transition: background 0.35s ease, color 0.35s ease;
 }
 img { max-width: 100%; height: auto; }
 .wrap { max-width: var(--content-width); margin: 0 auto; padding: 0 1.25rem; }
@@ -32,6 +33,7 @@ header.site {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
+html[data-theme="dark"] header.site { background: rgba(35, 33, 28, 0.86); }
 .header-inner {
   display: flex; align-items: center; justify-content: space-between;
   padding: 1rem 1.25rem; max-width: var(--content-width); margin: 0 auto;
@@ -47,6 +49,22 @@ nav.site a {
   padding: 0.5rem 0 2px; border-bottom: 1px solid transparent; display: inline-block;
 }
 nav.site a:hover, nav.site a.current { border-bottom-color: var(--color-accent); color: var(--color-accent); }
+
+/* ヘッダー右側（テーマ切替＋ハンバーガー） */
+.header-actions { display: flex; align-items: center; gap: 0.6rem; }
+.theme-toggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; cursor: pointer;
+  border: 1px solid var(--color-line); border-radius: 999px; background: var(--color-paper);
+  color: var(--color-ink); padding: 0;
+  transition: transform var(--transition), border-color var(--transition);
+}
+.theme-toggle:hover { transform: rotate(15deg); border-color: var(--color-accent); }
+.theme-toggle svg { width: 20px; height: 20px; }
+.theme-toggle .icon-moon { display: block; }
+.theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 
 /* モバイルナビ（CSSのみ） */
 #nav-toggle { display: none; }
@@ -69,9 +87,9 @@ nav.site a:hover, nav.site a.current { border-bottom-color: var(--color-accent);
   nav.site li:first-child { border-top: none; }
   nav.site a { display: block; padding: 0.95rem 1.5rem; font-size: 1rem; border-bottom: none; }
   #nav-toggle:checked ~ nav.site { display: block; }
-  #nav-toggle:checked ~ .nav-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  #nav-toggle:checked ~ .nav-btn span:nth-child(2) { opacity: 0; }
-  #nav-toggle:checked ~ .nav-btn span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  #nav-toggle:checked ~ .header-actions .nav-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #nav-toggle:checked ~ .header-actions .nav-btn span:nth-child(2) { opacity: 0; }
+  #nav-toggle:checked ~ .header-actions .nav-btn span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 }
 
 /* ---------- hero（トップ） ---------- */
@@ -91,7 +109,8 @@ nav.site a:hover, nav.site a.current { border-bottom-color: var(--color-accent);
 .hero-illust img { border-radius: var(--radius); box-shadow: 0 2px 12px rgba(51,48,42,.10); }
 .hero-note { margin-top: 0.8rem; font-size: 0.78rem; color: var(--color-ink-light); }
 .hero .org { margin-top: 2.4rem; display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-.hero .org img { height: 34px; width: auto; }
+.hero .org img { height: 34px; width: auto; background: #fff; padding: 4px 8px; border-radius: 6px; box-sizing: content-box; }
+html[data-theme="dark"] .hero-illust img { filter: brightness(0.88) contrast(1.02); }
 .hero .org span { font-size: 0.95rem; letter-spacing: 0.12em; }
 
 /* ---------- 汎用ページ ---------- */
@@ -220,7 +239,7 @@ section.tight { padding-top: calc(var(--space-section) * .5); }
 /* ボタン */
 .btn {
   display: inline-block; margin-top: 1.8rem; text-decoration: none; cursor: pointer; border: none;
-  color: var(--color-paper); background: var(--color-indigo);
+  color: #fffdf7; background: var(--color-indigo);
   font-family: var(--font-sans); font-size: 0.92rem; letter-spacing: 0.1em;
   padding: 0.85rem 2.4rem; border-radius: 999px; min-height: 48px;
   transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
@@ -324,3 +343,12 @@ footer.site p.small { font-size: 0.85rem; margin-top: 0.8rem; color: #c9c2ae; }
 /* YouTube埋め込み */
 .video-embed { position: relative; max-width: 720px; margin: 3rem auto 0; aspect-ratio: 16 / 9; }
 .video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; border-radius: var(--radius); }
+
+/* ---------- ダークモード微調整 ---------- */
+html[data-theme="dark"] .btn { background: #4a5d85; color: #f4f0e4; }
+html[data-theme="dark"] .btn:hover, html[data-theme="dark"] .btn.accent { background: var(--color-accent); }
+html[data-theme="dark"] footer.site { background: #1d1b17; }
+html[data-theme="dark"] .card, html[data-theme="dark"] .feature-main {
+  box-shadow: 0 2px 8px rgba(0,0,0,.25), 0 8px 28px rgba(0,0,0,.25);
+}
+html[data-theme="dark"] .notes { border-left-color: var(--color-indigo); }
