@@ -383,3 +383,16 @@ html[data-theme="dark"] .notes { border-left-color: var(--color-indigo); }
 .letter .sign { text-align: right; margin-top: 3em; }
 .letter .sign .name { font-size: 1.15rem; letter-spacing: 0.2em; font-weight: 600; }
 .letter .sign .date { font-size: 0.88rem; color: var(--color-ink-light); }
+
+/* ---------- 対談ページ ---------- */
+.letter h4 { font-size: 1.02rem; font-weight: 600; letter-spacing: 0.05em; margin-top: 2em; color: var(--color-ink); }
+.letter blockquote .spk {
+  font-family: var(--font-sans); font-weight: 600; font-size: 0.85em;
+  color: var(--color-accent); margin-right: 0.7em; letter-spacing: 0.1em;
+}
+.next-notice {
+  max-width: var(--measure); margin: 3rem auto 0; padding: 1.6rem 1.8rem;
+  background: var(--color-paper); border: 1px dashed var(--color-line); border-radius: var(--radius);
+  font-size: 0.95rem; text-align: center;
+}
+.next-notice .kicker { font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--color-accent); margin-bottom: 0.5rem; }
