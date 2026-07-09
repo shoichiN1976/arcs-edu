@@ -48,6 +48,7 @@
 <section class="tight">
   <div class="wrap">
     <div class="video-embed">
+      <!-- TODO: 最新動画のIDに差し替え -->
       <iframe src="https://www.youtube.com/embed/f3NkMquBFK0" title="最新動画" allowfullscreen loading="lazy"></iframe>
     </div>
     <p style="text-align:center"><a class="btn" href="#">チャンネルを見る</a><!-- TODO: チャンネルURL --></p>
@@ -73,7 +74,7 @@
     <div>
       <h5>無料メール登録</h5>
       <p class="small">動画・連載小説・ニューストピックの更新を、メールでお届けします。</p>
-      <form class="mail-form" action="#" method="POST"><!-- TODO: FormspreeのURLに差し替え -->
+      <form class="mail-form" action="https://formspree.io/f/xgojjrzo" method="POST">
         <input type="email" name="email" placeholder="メールアドレス" required>
         <button type="submit">登録する</button>
       </form>
@@ -91,6 +92,6 @@
   <p class="copyright">© 2026 一般社団法人 教育研究所ARCS</p>
 </footer>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=2" defer></script>
 </body>
 </html>
