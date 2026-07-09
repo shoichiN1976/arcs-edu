@@ -11,11 +11,6 @@ Icon?
 *.swp
 *~
 
-# CNAME（カスタムドメイン）は DNS 切替時まで公開しない。
-# 仮URL（<username>.github.io/arcs-edu）で確認するため一時的に除外している。
-# 7/16頃のDNS切替時にこの行を削除して CNAME をコミットする。
-CNAME
-
 # 内部資料（publicリポジトリに公開しない）。ローカルには残す。
 CLAUDE.md
 docs/
