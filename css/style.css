@@ -396,3 +396,14 @@ html[data-theme="dark"] .notes { border-left-color: var(--color-indigo); }
   font-size: 0.95rem; text-align: center;
 }
 .next-notice .kicker { font-family: var(--font-sans); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--color-accent); margin-bottom: 0.5rem; }
+
+/* ---------- 新着表示（ナビ赤丸＋NEWラベル） ---------- */
+.nav-dot {
+  display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--color-accent); margin-left: 5px; vertical-align: super;
+}
+.new-badge {
+  font-family: var(--font-sans); font-size: 0.62rem; font-weight: 600; letter-spacing: 0.12em;
+  color: #fffdf7; background: var(--color-accent); border-radius: 999px;
+  padding: 2px 9px; margin-left: 9px; vertical-align: 2px; white-space: nowrap;
+}
