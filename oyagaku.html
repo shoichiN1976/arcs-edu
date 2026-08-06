@@ -135,9 +135,11 @@
     background:rgba(255,255,255,.55); border:2px dashed var(--rust);
     border-radius:8px; padding:1.2rem 1.4rem;
   }
-  .oy-apply .qr img{ width:110px; height:110px; flex:none; background:#fff; padding:6px; border-radius:6px; }
+  .oy-apply .qr img{ width:110px; height:110px; flex:none; background:#fff; padding:6px; border-radius:6px; display:block; }
+  .oy-apply .qr a{ flex:none; display:block; line-height:0; }
   .oy-apply .qr .tx b{ display:block; font-weight:900; font-size:1.15rem; color:var(--rust); }
   .oy-apply .qr .tx p{ margin-top:.5rem; font-size:.88rem; line-height:1.75; color:var(--br2); }
+  .oy-apply .qr .tx .qrnote{ margin-top:.6rem; font-size:.82rem; color:var(--rust); font-weight:700; }
 
   /* --- 講師 --- */
   .oy-lec{ display:grid; grid-template-columns:auto 1fr; gap:2rem; align-items:start; }
@@ -162,6 +164,7 @@
     .oy-info .r{ flex-direction:column; gap:.3rem; }
     .oy-info dt{ width:auto; }
     .oy-apply .qr{ flex-direction:column; text-align:center; }
+    .oy-apply .qr .tx .qrnote{ display:none; }
   }
 </style>
 </head>
@@ -314,10 +317,11 @@
     <div class="oy-hd" id="apply"><span>entry</span><i></i></div>
     <div class="oy-apply">
       <div class="qr">
-        <img src="assets/oyagaku-qr.png" alt="お申し込みフォームのQRコード">
+        <a href="https://forms.gle/1tRfrqJXwfvvHQgE9" target="_blank" rel="noopener"><img src="assets/oyagaku-form-qr.png" alt="お申し込みフォームのQRコード"></a>
         <div class="tx">
           <b>お申し込みはこちらから</b>
           <p>下のフォームに必要事項をご記入のうえ、送信してください。折り返し、確認のメールを自動でお送りします。ご記入いただいた情報は、本講座の運営に関するご連絡のためにのみ使用いたします。</p>
+          <p class="qrnote">パソコンでご覧の方は、QRコードをスマートフォンで読み取ると、お手元でご記入いただけます。</p>
         </div>
       </div>
       <div class="frame">
