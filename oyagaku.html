@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ▼ 準備中は検索エンジンに載せない。一般公開するときはこの1行を削除する -->
+<meta name="robots" content="noindex,nofollow">
+<title>親学2026 秋 — 常識を手放すと、子どもは伸びはじめる。｜教育研究所ARCS</title>
+<meta name="description" content="管野淳一 教育講演会「親学2026 秋」。10月18日(日)・11月29日(日)、塾クセジュ柏教室にて開催。参加費無料、お申し込み受付中。">
+<meta property="og:title" content="親学2026 秋 — 常識を手放すと、子どもは伸びはじめる。">
+<meta property="og:description" content="管野淳一が40年の現場経験から語る、全2回の子育てセミナー。10/18(日)・11/29(日) 塾クセジュ柏教室。参加費無料。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://arcs-edu.com/oyagaku.html">
+<meta property="og:image" content="https://arcs-edu.com/assets/oyagaku-og.jpg">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* ============================================================
+     親学2026 秋 専用スタイル（チラシC案に準拠）
+     生成り／濃茶／テラコッタの2色構成
+     ============================================================ */
+  .oy{
+    --bg:#eceade;
+    --br:#3f2c1d;
+    --br2:#5a4430;
+    --rust:#a8622a;
+    --go:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","BIZ UDPGothic","Noto Sans JP","Noto Sans CJK JP",sans-serif;
+    background:var(--bg); color:var(--br);
+    font-family:var(--go);
+    margin:0; padding:0 0 4rem;
+  }
+  .oy *{ font-family:inherit; }
+  .oy .in{ max-width:940px; margin:0 auto; padding:0 1.5rem; }
+
+  /* --- ヘッダー部 --- */
+  .oy-lead{
+    display:flex; align-items:center; justify-content:center; gap:1rem;
+    padding-top:3.5rem;
+  }
+  .oy-lead span{
+    font-weight:800; font-size:clamp(.85rem,2.6vw,1.05rem); letter-spacing:.24em;
+    white-space:nowrap;
+  }
+  .oy-lead i{ width:clamp(22px,8vw,70px); height:2px; background:var(--rust); display:block; }
+
+  .oy-blob{ position:relative; margin-top:1.1rem; }
+  .oy-blob svg{ width:100%; display:block; }
+  .oy-blob .t{
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    gap:.5rem; padding-bottom:1.2%; margin:0;
+  }
+  .oy-blob .ja{
+    font-weight:900; color:var(--bg); line-height:1; letter-spacing:.06em;
+    font-size:clamp(3.1rem,12.4vw,7.4rem);
+  }
+  .oy-blob .yr{
+    font-weight:900; color:var(--bg); line-height:1; letter-spacing:.02em;
+    font-size:clamp(1.85rem,7.2vw,4.4rem);
+  }
+  .oy-sub{
+    text-align:center; margin-top:1.1rem; font-weight:800;
+    font-size:clamp(.7rem,2.4vw,1rem); letter-spacing:.22em;
+  }
+
+  .oy-doodle{ margin-top:1.2rem; }
+  .oy-doodle svg{ width:100%; display:block; }
+
+  /* --- キャッチ --- */
+  .oy-catch{ margin-top:2.4rem; text-align:center; }
+  .oy-catch h2{
+    font-weight:900; line-height:1.42; letter-spacing:.02em;
+    font-size:clamp(1.5rem,5.6vw,2.9rem);
+  }
+  .oy-catch h2 em{ font-style:normal; color:var(--rust); }
+  .oy-catch p{
+    max-width:34em; margin:1.6rem auto 0; text-align:left;
+    font-size:clamp(.92rem,2.6vw,1rem); line-height:1.95; color:var(--br2);
+  }
+
+  /* --- ラベル付き罫線 --- */
+  .oy-hd{ display:flex; align-items:center; gap:1rem; margin:3.4rem 0 1.6rem; }
+  .oy-hd span{ font-weight:900; font-size:1.15rem; letter-spacing:.06em; }
+  .oy-hd i{ flex:1; height:1px; background:var(--br); opacity:.3; display:block; }
+
+  /* --- プログラム --- */
+  .oy-prog .p{ padding:1.6rem 0; border-bottom:1px dashed rgba(63,44,29,.28); }
+  .oy-prog .p:first-child{ border-top:1px dashed rgba(63,44,29,.28); }
+  .oy-prog .dt{
+    font-weight:900; color:var(--rust); letter-spacing:.01em;
+    font-size:clamp(1.5rem,4.6vw,2rem);
+  }
+  .oy-prog .dt small{ font-size:.5em; letter-spacing:.08em; margin-left:.4em; }
+  .oy-prog .dt b{ font-weight:800; font-size:.46em; letter-spacing:.06em; margin-left:.8em; color:var(--br2); }
+  .oy-prog h3{
+    font-weight:900; line-height:1.4; letter-spacing:.01em; margin-top:.5rem;
+    font-size:clamp(1.25rem,4.4vw,1.9rem);
+  }
+  .oy-prog h3 em{ font-style:normal; color:var(--rust); }
+  .oy-prog p{ margin-top:.9rem; font-size:.95rem; line-height:1.9; color:var(--br2); max-width:40em; }
+  .oy-prog .single{
+    margin-top:1.4rem; font-weight:800; font-size:.95rem; color:var(--rust); letter-spacing:.04em;
+  }
+
+  /* --- 開催概要 --- */
+  .oy-info dl{ margin:0; }
+  .oy-info .r{ display:flex; gap:1.6rem; padding:.95rem .2rem; border-bottom:1px solid rgba(63,44,29,.18); }
+  .oy-info .r:first-child{ border-top:1px solid rgba(63,44,29,.18); }
+  .oy-info dt{ width:7em; flex:none; font-weight:800; font-size:.85rem; letter-spacing:.12em; color:var(--rust); padding-top:.15rem; }
+  .oy-info dd{ margin:0; font-size:.96rem; line-height:1.8; }
+  .oy-info dd .s{ display:block; font-size:.85rem; color:var(--br2); margin-top:.3rem; }
+  .oy-free{
+    display:inline-block; background:var(--rust); color:var(--bg);
+    font-weight:900; letter-spacing:.14em; font-size:1rem;
+    padding:.45rem 1.5rem; border-radius:99px;
+  }
+
+  /* --- アクセス --- */
+  .oy-access{ display:grid; grid-template-columns:1.1fr 1fr; gap:2.4rem; align-items:start; }
+  .oy-access img{ width:100%; display:block; border-radius:8px; border:1px solid rgba(63,44,29,.22); background:#fff; }
+  .oy-access .a-name{ font-weight:900; font-size:1.4rem; letter-spacing:.04em; }
+  .oy-access .a-addr{ margin-top:.7rem; font-size:.95rem; line-height:1.85; color:var(--br2); }
+  .oy-access .a-note{ margin-top:1.1rem; font-size:.88rem; line-height:1.8; color:var(--br2); }
+  .oy-access .a-map{ margin-top:1.2rem; display:inline-block; font-size:.88rem; color:var(--rust); font-weight:800; }
+
+  /* --- 申込 --- */
+  .oy-apply .frame{
+    background:#fff; border:1px solid rgba(63,44,29,.22); border-radius:8px;
+    padding:.5rem; overflow:hidden;
+  }
+  .oy-apply iframe{ width:100%; min-height:1200px; border:none; display:block; }
+  .oy-apply .fb{ text-align:center; margin-top:1.2rem; font-size:.9rem; color:var(--br2); }
+  .oy-apply .fb a{ color:var(--rust); font-weight:800; }
+  .oy-apply .qr{
+    display:flex; align-items:center; gap:1.6rem; margin-bottom:1.8rem;
+    background:rgba(255,255,255,.55); border:2px dashed var(--rust);
+    border-radius:8px; padding:1.2rem 1.4rem;
+  }
+  .oy-apply .qr img{ width:110px; height:110px; flex:none; background:#fff; padding:6px; border-radius:6px; }
+  .oy-apply .qr .tx b{ display:block; font-weight:900; font-size:1.15rem; color:var(--rust); }
+  .oy-apply .qr .tx p{ margin-top:.5rem; font-size:.88rem; line-height:1.75; color:var(--br2); }
+
+  /* --- 講師 --- */
+  .oy-lec{ display:grid; grid-template-columns:auto 1fr; gap:2rem; align-items:start; }
+  .oy-lec .ph{ width:130px; height:130px; border-radius:50%; overflow:hidden; border:3px solid var(--bg); box-shadow:0 0 0 1px rgba(63,44,29,.3); }
+  .oy-lec .ph img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .oy-lec .nm{ font-weight:900; font-size:1.5rem; letter-spacing:.08em; }
+  .oy-lec .nm small{ font-size:.5em; font-weight:600; color:var(--br2); margin-left:.9em; letter-spacing:.06em; }
+  .oy-lec .rl{ margin-top:.5rem; font-size:.85rem; font-weight:800; color:var(--rust); }
+  .oy-lec p{ margin-top:1rem; font-size:.95rem; line-height:1.9; color:var(--br2); }
+
+  .oy-dl{ text-align:center; margin-top:3rem; }
+  .oy-dl a{
+    display:inline-block; border:2px solid var(--br); color:var(--br);
+    font-weight:800; font-size:.92rem; letter-spacing:.08em; text-decoration:none;
+    padding:.8rem 2rem; border-radius:99px; transition:.15s;
+  }
+  .oy-dl a:hover{ background:var(--br); color:var(--bg); }
+
+  @media (max-width: 720px){
+    .oy-access{ grid-template-columns:1fr; gap:1.6rem; }
+    .oy-lec{ grid-template-columns:1fr; justify-items:center; text-align:center; }
+    .oy-info .r{ flex-direction:column; gap:.3rem; }
+    .oy-info dt{ width:auto; }
+    .oy-apply .qr{ flex-direction:column; text-align:center; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="name">教育研究所ARCS</span>
+      <span class="en">Act Research Counsel Store</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" aria-hidden="true">
+    <label class="nav-btn" for="nav-toggle" aria-label="メニュー"><span></span><span></span><span></span></label>
+    <nav class="site">
+      <ul>
+        <li><a href="about.html">ARCSとは</a></li>
+        <li><a href="videos.html">動画</a></li>
+        <li><a href="novel/index.html">小説</a></li>
+        <li><a href="news/index.html">ニュース</a></li>
+        <li><a href="blog/index.html">ブログ</a></li>
+        <li><a href="services.html">活動・サービス</a></li>
+        <li><a href="membership.html">会員案内</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="oy">
+  <div class="in">
+
+    <div class="oy-lead"><i></i><span>管野淳一　教育講演会</span><i></i></div>
+
+    <div class="oy-blob">
+      <svg viewBox="0 0 1000 250" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="#3f2c1d" d="M44,66 C64,14 210,2 392,8 C574,14 772,0 936,12 C994,16 1004,64 988,116 C972,166 998,206 944,222 C806,244 500,232 300,236 C148,239 40,244 22,196 C6,154 24,118 44,66 Z"/>
+      </svg>
+      <h1 class="t"><span class="ja">親学</span><span class="yr">2026</span></h1>
+    </div>
+    <p class="oy-sub">KASHIWA CHIBA ・ 2026.10.18 &amp; 11.29 SUN</p>
+
+    <div class="oy-doodle">
+      <svg viewBox="0 0 1000 382" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+           fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <g stroke="#3f2c1d" stroke-width="7">
+          <circle cx="120" cy="72" r="30"/>
+          <path d="M92,58 C96,26 146,26 149,58"/>
+          <path d="M96,104 L74,258 L166,258 L146,104"/>
+          <path d="M148,124 C186,120 196,86 190,58"/>
+          <circle cx="190" cy="46" r="12"/>
+          <path d="M96,258 L92,330 M148,258 L152,330"/>
+          <path d="M72,332 C82,344 106,344 112,330"/>
+          <path d="M136,330 C142,344 166,344 176,332"/>
+        </g>
+        <g stroke="#3f2c1d" stroke-width="7">
+          <circle cx="452" cy="60" r="28"/>
+          <path d="M430,84 L414,214 L494,214 L478,84"/>
+          <path d="M416,110 L378,168"/>
+          <path d="M492,110 C528,132 546,160 550,186"/>
+          <path d="M430,214 L426,290 M480,214 L486,290"/>
+          <path d="M406,292 C416,304 440,304 448,290"/>
+          <path d="M468,290 C474,304 498,304 508,292"/>
+          <circle cx="586" cy="186" r="22"/>
+          <path d="M570,206 L560,286 L618,286 L604,206"/>
+          <path d="M568,222 C556,206 552,196 552,188"/>
+          <path d="M608,222 L636,206"/>
+          <path d="M574,286 L570,330 M608,286 L614,330"/>
+          <path d="M556,332 C564,342 582,342 588,330"/>
+          <path d="M600,330 C606,342 626,342 634,332"/>
+        </g>
+        <g stroke="#3f2c1d" stroke-width="7">
+          <circle cx="852" cy="80" r="29"/>
+          <path d="M824,64 C830,32 878,32 882,64"/>
+          <path d="M828,106 L812,232 L898,232 L882,106"/>
+          <path d="M826,132 L806,186 M886,132 L906,186"/>
+          <path d="M828,234 L824,308 M882,234 L888,308"/>
+          <path d="M804,310 C814,322 838,322 844,308"/>
+          <path d="M870,308 C876,322 900,322 910,310"/>
+          <path d="M796,186 L856,200 L916,186 L916,238 L856,252 L796,238 Z"/>
+          <path d="M856,200 L856,252"/>
+        </g>
+        <g stroke="#a8622a" stroke-width="6">
+          <path d="M236,120 C230,96 262,86 274,102 C282,80 320,82 324,104 C348,100 356,130 334,138 L246,138 C230,138 228,124 236,120 Z"/>
+          <path d="M660,318 C654,296 686,286 698,302 C706,282 744,284 748,304 C772,300 780,330 758,338 L670,338 C654,338 652,322 660,318 Z"/>
+          <path d="M240,182 C260,166 280,198 300,182 M240,220 C260,204 280,236 300,220"/>
+          <path d="M676,88 C692,72 708,104 724,88 C740,72 756,104 772,88"/>
+          <path d="M226,300 L246,270 L252,306 L268,272 L276,308 L292,276"/>
+          <path d="M694,204 C706,192 706,176 694,166 M714,206 C728,192 728,172 714,162"/>
+        </g>
+        <g stroke="#a8622a" stroke-width="6">
+          <circle cx="368" cy="322" r="10"/>
+          <path d="M368,296 L368,312 M368,332 L368,348 M342,322 L358,322 M378,322 L394,322 M350,304 L360,314 M376,330 L386,340 M386,304 L376,314 M360,330 L350,340"/>
+          <circle cx="428" cy="352" r="8"/>
+          <path d="M428,332 L428,344 M428,360 L428,372 M408,352 L420,352 M436,352 L448,352"/>
+          <path d="M948,296 C934,262 934,222 946,196"/>
+          <path d="M942,268 C922,264 912,250 910,236 M944,238 C960,234 972,220 974,206 M940,306 C920,304 908,290 906,276"/>
+        </g>
+        <g>
+          <ellipse cx="600" cy="60" rx="86" ry="30" fill="#a8622a"/>
+          <text x="600" y="71" text-anchor="middle" font-size="30" font-weight="900" fill="#eceade" letter-spacing="1">親学 '26</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="oy-catch">
+      <h2>常識を手放すと、<br><em>子どもは伸びはじめる。</em></h2>
+      <p>教育研究所ARCS代表・管野淳一が、40年の現場経験から語ります。世の中で「正しい」とされている子育ての作法を、いちど疑ってみる。よかれと思って続けてきたことを、いったん棚に置いてみる。そこから見えてくるものを、二回にわたってお話しします。</p>
+    </div>
+
+    <div class="oy-hd"><span>program</span><i></i></div>
+    <div class="oy-prog">
+      <div class="p">
+        <div class="dt">10.18<small>SUN</small><b>14:00 — 15:45</b></div>
+        <h3><em>「いい親」</em>をやめると、子どもは伸びる</h3>
+        <p>熱心な親ほど陥りやすい関わり方を、ひとつずつ分解していきます。手放してよいもの、手放すべきものはどこにあるのか。良かれと思って続けてきたことを、いったん棚に置いてみる時間です。</p>
+      </div>
+      <div class="p">
+        <div class="dt">11.29<small>SUN</small><b>14:00 — 15:45</b></div>
+        <h3><em>「勉強しなさい」</em>が効かない理由</h3>
+        <p>やる気は、促して出るものではありません。条件が揃ったときに、ひとりでに生まれるものです。その仕組みを解きほぐし、家庭で今日から変えられることを具体的にお伝えします。</p>
+      </div>
+      <p class="single">全2回の構成ですが、各回だけのご参加も歓迎します。</p>
+    </div>
+
+    <div class="oy-hd"><span>outline</span><i></i></div>
+    <div class="oy-info">
+      <dl>
+        <div class="r"><dt>日 程</dt><dd>2026年10月18日（日）14:00 — 15:45<br>2026年11月29日（日）14:00 — 15:45<span class="s">開場は各回13:45を予定しています。</span></dd></div>
+        <div class="r"><dt>会 場</dt><dd>塾クセジュ柏教室<span class="s">千葉県柏市明原2-6-1</span></dd></div>
+        <div class="r"><dt>対 象</dt><dd>小学生〜高校生のお子様をお持ちの保護者の方</dd></div>
+        <div class="r"><dt>参加費</dt><dd><span class="oy-free">無 料</span></dd></div>
+        <div class="r"><dt>定 員</dt><dd>先着順<span class="s">席に限りがございます。定員になり次第、受付を終了いたします。</span></dd></div>
+        <div class="r"><dt>申込〆切</dt><dd>各回の開催日の10日前</dd></div>
+        <div class="r"><dt>主 催</dt><dd>一般社団法人 教育研究所ARCS</dd></div>
+        <div class="r"><dt>お問い合わせ</dt><dd>sdn@arcs-edu.com</dd></div>
+      </dl>
+    </div>
+
+    <div class="oy-hd"><span>access</span><i></i></div>
+    <div class="oy-access">
+      <img src="assets/oyagaku-map.jpg" alt="塾クセジュ柏教室 案内図（柏駅西口より）">
+      <div>
+        <p class="a-name">塾クセジュ柏教室</p>
+        <p class="a-addr">千葉県柏市明原2-6-1<br>JR常磐線・東武アーバンパークライン　柏駅 西口より</p>
+        <p class="a-note">柏駅西口を出て、国道6号方面へ。ニッポンレンタカーの先です。<br>お車でお越しの場合は、近隣のコインパーキングをご利用ください。</p>
+        <a class="a-map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9F%8F%E5%B8%82%E6%98%8E%E5%8E%9F2-6-1" target="_blank" rel="noopener">Googleマップで見る →</a>
+      </div>
+    </div>
+
+    <div class="oy-hd" id="apply"><span>entry</span><i></i></div>
+    <div class="oy-apply">
+      <div class="qr">
+        <img src="assets/oyagaku-qr.png" alt="お申し込みフォームのQRコード">
+        <div class="tx">
+          <b>お申し込みはこちらから</b>
+          <p>下のフォームに必要事項をご記入のうえ、送信してください。折り返し、確認のメールを自動でお送りします。ご記入いただいた情報は、本講座の運営に関するご連絡のためにのみ使用いたします。</p>
+        </div>
+      </div>
+      <div class="frame">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScq6lbBCYU5iwqg13D_OrY08Sr3Ss-hvPF1rK__hExRqOhSjw/viewform?embedded=true" title="親学2026 秋 お申し込みフォーム" loading="lazy">読み込んでいます…</iframe>
+      </div>
+      <p class="fb">フォームが表示されない場合は、<a href="https://docs.google.com/forms/d/e/1FAIpQLScq6lbBCYU5iwqg13D_OrY08Sr3Ss-hvPF1rK__hExRqOhSjw/viewform" target="_blank" rel="noopener">こちらのページ</a>からお申し込みください。</p>
+    </div>
+
+    <div class="oy-hd"><span>lecturer</span><i></i></div>
+    <div class="oy-lec">
+      <div class="ph"><img src="assets/kanno.jpg" alt="管野淳一"></div>
+      <div>
+        <p class="nm">管野 淳一<small>かんの じゅんいち</small></p>
+        <p class="rl">一般社団法人 教育研究所ARCS 代表理事</p>
+        <p>高校教師、塾講師を経て、1984年に塾クセジュを創立。千葉県東葛地域を中心に6教室・生徒数およそ1000名の進学塾へと育てる。2014年、「地域の教育力向上」と「親の意識改革」を目指して教育研究所ARCSを設立。</p>
+        <p>市教育アドバイザー、学校コンサルタントを務める一方、親のための講座「親学」、お母さんのための「母親塾」を各地で開催。YouTube「KSチャンネル」配信中。著書に『中学受験が子どもをダメにする』（幻冬舎）。読売新聞、週刊朝日ほかに記事掲載。</p>
+      </div>
+    </div>
+
+    <p class="oy-dl"><a href="assets/oyagaku2026aki.pdf" target="_blank" rel="noopener">チラシ（PDF）を見る</a></p>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="footer-inner">
+    <div>
+      <h5>無料メール登録</h5>
+      <p class="small">動画・連載小説・ニューストピックの更新を、メールでお届けします。</p>
+      <form class="mail-form" action="https://formspree.io/f/xgojjrzo" method="POST">
+        <input type="email" name="email" placeholder="メールアドレス" required>
+        <button type="submit">登録する</button>
+      </form>
+    </div>
+    <div>
+      <h5>教育研究所ARCS</h5>
+      <p class="small">一般社団法人 教育研究所ARCS<br>Act Research Counsel Store</p>
+      <div class="sns">
+        <a href="#">YouTube</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">© 2026 一般社団法人 教育研究所ARCS</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
