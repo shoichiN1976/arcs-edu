@@ -79,6 +79,24 @@
     .oyagaku-band .flyer{ width:100%; max-width:380px; }
     .oyagaku-band .tx{ text-align:center; }
   }
+
+  /* 上部に置くときのコンパクト版 */
+  .oyagaku-band.top{ padding:2rem 1.25rem; }
+  .oyagaku-band.top .inner{ max-width:940px; gap:2.4rem; }
+  .oyagaku-band.top .flyer{ width:30%; max-width:280px; }
+  .oyagaku-band.top h3{ font-size:clamp(1.4rem,3.6vw,1.95rem); margin-top:.8rem; }
+  .oyagaku-band.top .date{ margin-top:.8rem; font-size:.95rem; line-height:1.75; }
+  .oyagaku-band.top .more{ margin-top:1.1rem; padding:.7rem 1.7rem; font-size:.95rem; }
+  @media (max-width: 760px){
+    .oyagaku-band.top{ padding:1.6rem 1.25rem; }
+    .oyagaku-band.top .inner{ flex-direction:row; gap:1.2rem; align-items:flex-start; }
+    .oyagaku-band.top .flyer{ width:38%; max-width:none; }
+    .oyagaku-band.top .tx{ text-align:left; }
+    .oyagaku-band.top h3{ font-size:1.25rem; }
+    .oyagaku-band.top .date{ font-size:.82rem; }
+    .oyagaku-band.top .free{ font-size:.78rem; padding:.24rem .8rem; }
+    .oyagaku-band.top .more{ margin-top:.9rem; padding:.6rem 1.3rem; font-size:.88rem; }
+  }
 </style>
 </head>
 <body>
@@ -112,21 +130,7 @@
 
 <main>
 
-<div class="hero">
-  <h1>新しい時代の学び</h1>
-  <p class="sub">セカンドライフ充実を</p>
-
-  <div class="hero-illust">
-    <img src="assets/hero.jpg" alt="学び合う母親たちと、語りかける先生——ARCSの学びの情景" width="1600" height="900" fetchpriority="high">
-  </div>
-
-  <div class="org">
-    <img src="assets/logo.jpg" alt="教育研究所ARCSロゴ">
-    <span>一般社団法人 教育研究所ARCS</span>
-  </div>
-</div>
-
-<div class="oyagaku-band">
+<div class="oyagaku-band top">
   <a class="inner" href="oyagaku.html">
     <div class="flyer">
       <img src="assets/oyagaku-flyer.jpg" alt="親学2026 秋 チラシ — 常識を手放すと、子どもは伸びはじめる。" width="1200" height="1697" loading="lazy">
@@ -143,6 +147,21 @@
     </div>
   </a>
 </div>
+
+<div class="hero">
+  <h1>新しい時代の学び</h1>
+  <p class="sub">セカンドライフ充実を</p>
+
+  <div class="hero-illust">
+    <img src="assets/hero.jpg" alt="学び合う母親たちと、語りかける先生——ARCSの学びの情景" width="1600" height="900" fetchpriority="high">
+  </div>
+
+  <div class="org">
+    <img src="assets/logo.jpg" alt="教育研究所ARCSロゴ">
+    <span>一般社団法人 教育研究所ARCS</span>
+  </div>
+</div>
+
 
 <section>
   <div class="wrap">
