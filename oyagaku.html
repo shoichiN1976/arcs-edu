@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- ▼ 準備中は検索エンジンに載せない。一般公開するときはこの1行を削除する -->
-<meta name="robots" content="noindex,nofollow">
 <title>親学2026 秋 — 常識を手放すと、子どもは伸びはじめる。｜教育研究所ARCS</title>
 <meta name="description" content="管野淳一 教育講演会「親学2026 秋」。10月18日(日)・11月29日(日)、塾クセジュ柏教室にて開催。参加費無料、お申し込み受付中。">
 <meta property="og:title" content="親学2026 秋 — 常識を手放すと、子どもは伸びはじめる。">
@@ -127,6 +125,36 @@
     content:""; position:absolute; left:50%; bottom:-15px; transform:translateX(-50%);
     border-left:17px solid transparent; border-right:17px solid transparent;
     border-top:15px solid var(--red);
+  }
+
+  /* ===== 「親学とは？」への導線 ===== */
+  .oy-what{
+    display:flex; align-items:center; gap:1.8rem;
+    background:#fff; border-radius:10px; overflow:hidden;
+    box-shadow:0 2px 8px rgba(43,39,35,.10);
+    margin-top:3.2rem; text-decoration:none; color:inherit; transition:.15s;
+  }
+  .oy-what:hover{ box-shadow:0 6px 18px rgba(43,39,35,.18); transform:translateY(-2px); }
+  .oy-what .im{ flex:none; width:38%; max-width:300px; align-self:stretch; }
+  .oy-what .im img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .oy-what .tx{ flex:1; padding:1.7rem 1.9rem 1.7rem 0; min-width:0; }
+  .oy-what .lb{
+    display:inline-block; background:var(--red); color:#fff; font-weight:700;
+    font-size:.72rem; letter-spacing:.16em; padding:.22rem .8rem; border-radius:3px; margin:0;
+  }
+  .oy-what h3{
+    font-weight:900; font-size:clamp(1.3rem,4vw,1.7rem); line-height:1.4;
+    letter-spacing:.02em; margin:.85rem 0 0; color:var(--ink);
+  }
+  .oy-what p{ margin:.7rem 0 0; font-size:.92rem; line-height:1.85; color:var(--ink2); }
+  .oy-what .go{
+    display:inline-block; margin-top:1.1rem; font-weight:800; font-size:.95rem;
+    color:var(--red); letter-spacing:.04em;
+  }
+  @media (max-width: 720px){
+    .oy-what{ flex-direction:column; align-items:stretch; gap:0; margin-top:2.4rem; }
+    .oy-what .im{ width:100%; max-width:none; aspect-ratio:16/9; }
+    .oy-what .tx{ padding:1.4rem 1.4rem 1.7rem; }
   }
 
   /* ===== ラベル付き罫線 ===== */
@@ -335,6 +363,17 @@
   </section>
 
   <div class="in">
+
+    <!-- ▼ 「親学とは？」— 管野先生の原稿ページへ -->
+    <a class="oy-what" href="oyagaku-message.html">
+      <div class="im"><img src="assets/oyagaku-lecture.jpg" alt="保護者の皆さんに語りかける管野淳一"></div>
+      <div class="tx">
+        <p class="lb">親学とは？</p>
+        <h3>「親学」とは何か</h3>
+        <p>時代と共に子育ての常識も変わります。古い子育てを脱して、今の時代にふさわしい子育てのあり方を提案したい——。代表理事・管野淳一が、この講座で伝えたいことを綴りました。</p>
+        <span class="go">詳しくはコチラ →</span>
+      </div>
+    </a>
 
     <!-- ▼ プログラム -->
     <div class="oy-hd"><span>program</span><i></i></div>

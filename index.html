@@ -11,6 +11,75 @@
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFQZT2YSQY"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RFQZT2YSQY');</script>
+<style>
+  .oyagaku-band{
+    background:#fdf7ea;
+    border-top:1px solid #e6dcc6;
+    border-bottom:1px solid #e6dcc6;
+    padding:clamp(2.4rem,6vw,4rem) 1.25rem;
+  }
+  .oyagaku-band .inner{
+    max-width:1000px; margin:0 auto;
+    display:flex; align-items:center; gap:clamp(1.8rem,4vw,3.4rem);
+    text-decoration:none; color:inherit;
+  }
+  .oyagaku-band .flyer{
+    flex:none; width:44%; max-width:420px;
+    border-radius:6px; overflow:hidden;
+    box-shadow:0 6px 24px rgba(43,39,35,.22);
+    transition:.18s;
+  }
+  .oyagaku-band .inner:hover .flyer{
+    transform:translateY(-4px);
+    box-shadow:0 12px 34px rgba(43,39,35,.28);
+  }
+  .oyagaku-band .flyer img{ width:100%; display:block; }
+  .oyagaku-band .tx{ flex:1; min-width:0;
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","BIZ UDPGothic","Noto Sans JP",sans-serif;
+  }
+  .oyagaku-band .kicker{
+    display:inline-block; background:#b5432e; color:#fff;
+    font-size:.74rem; font-weight:700; letter-spacing:.18em;
+    padding:.28rem .95rem; border-radius:3px; margin:0;
+  }
+  .oyagaku-band h3{
+    font-weight:900; font-size:clamp(1.6rem,4.4vw,2.3rem); line-height:1.32;
+    letter-spacing:.02em; margin:1rem 0 0; color:#2b2723;
+  }
+  .oyagaku-band h3 em{ font-style:normal; color:#b5432e; }
+  .oyagaku-band .date{
+    margin:1rem 0 0; font-weight:800; font-size:clamp(.92rem,2.5vw,1rem);
+    line-height:1.9; color:#33445f; letter-spacing:.02em;
+  }
+  .oyagaku-band .date b{
+    background:#f0c14b; color:#4a3308; font-weight:900;
+    padding:.1rem .55rem; border-radius:3px; margin-right:.5rem;
+  }
+  .oyagaku-band .free{
+    display:inline-block; margin-top:.9rem; background:#e2892c; color:#fff;
+    font-weight:900; font-size:.88rem; letter-spacing:.14em;
+    padding:.3rem 1.1rem; border-radius:99px;
+  }
+  .oyagaku-band .more{
+    display:inline-block; margin-top:1.5rem;
+    background:#b5432e; color:#fff; border:2px solid #b5432e;
+    font-weight:800; font-size:1rem; letter-spacing:.06em;
+    padding:.8rem 2rem; border-radius:99px; transition:.15s;
+  }
+  .oyagaku-band .inner:hover .more{ background:#8e3122; border-color:#8e3122; }
+  html[data-theme="dark"] .oyagaku-band{
+    background:#2b2822; border-color:#403c33;
+  }
+  html[data-theme="dark"] .oyagaku-band h3{ color:#e9e3d3; }
+  html[data-theme="dark"] .oyagaku-band h3 em{ color:#e8917d; }
+  html[data-theme="dark"] .oyagaku-band .date{ color:#b9c6e0; }
+  html[data-theme="dark"] .oyagaku-band .date b{ background:#f0c14b; color:#3a2a06; }
+  @media (max-width: 760px){
+    .oyagaku-band .inner{ flex-direction:column; gap:1.8rem; }
+    .oyagaku-band .flyer{ width:100%; max-width:380px; }
+    .oyagaku-band .tx{ text-align:center; }
+  }
+</style>
 </head>
 <body>
 
@@ -55,6 +124,24 @@
     <img src="assets/logo.jpg" alt="教育研究所ARCSロゴ">
     <span>一般社団法人 教育研究所ARCS</span>
   </div>
+</div>
+
+<div class="oyagaku-band">
+  <a class="inner" href="oyagaku.html">
+    <div class="flyer">
+      <img src="assets/oyagaku-flyer.jpg" alt="親学2026 秋 チラシ — 常識を手放すと、子どもは伸びはじめる。" width="1200" height="1697" loading="lazy">
+    </div>
+    <div class="tx">
+      <p class="kicker">教育講演会</p>
+      <h3>親学2026 秋<br><em>常識を手放すと、<br>子どもは伸びはじめる。</em></h3>
+      <p class="date">
+        <b>第1回</b>10月18日（日）14:00 — 15:45<br>
+        <b>第2回</b>11月29日（日）14:00 — 15:45
+      </p>
+      <p><span class="free">参加費 無料</span></p>
+      <span class="more">詳しくはコチラ →</span>
+    </div>
+  </a>
 </div>
 
 <section>
