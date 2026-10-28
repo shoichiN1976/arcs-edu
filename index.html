@@ -55,6 +55,19 @@
     background:#f0c14b; color:#4a3308; font-weight:900;
     padding:.1rem .55rem; border-radius:3px; margin-right:.5rem;
   }
+  /* 回ごとの状態（終了／受付中）と申込〆切 */
+  .oyagaku-band .date .ln{ display:block; }
+  .oyagaku-band .date .ln.done{ color:#8d8678; }
+  .oyagaku-band .date .ln.done b{ opacity:.55; }
+  .oyagaku-band .date .st{
+    display:inline-block; background:#b5432e; color:#fff;
+    font-size:.72rem; font-weight:800; letter-spacing:.1em;
+    padding:.12rem .62rem; border-radius:99px;
+    margin-left:.45rem; white-space:nowrap;
+  }
+  .oyagaku-band .date .dl{
+    margin-top:.4rem; color:#b5432e; font-weight:900;
+  }
   .oyagaku-band .free{
     display:inline-block; margin-top:.9rem; background:#e2892c; color:#fff;
     font-weight:900; font-size:.88rem; letter-spacing:.14em;
@@ -74,6 +87,8 @@
   html[data-theme="dark"] .oyagaku-band h3 em{ color:#e8917d; }
   html[data-theme="dark"] .oyagaku-band .date{ color:#b9c6e0; }
   html[data-theme="dark"] .oyagaku-band .date b{ background:#f0c14b; color:#3a2a06; }
+  html[data-theme="dark"] .oyagaku-band .date .ln.done{ color:#7f8899; }
+  html[data-theme="dark"] .oyagaku-band .date .dl{ color:#e8917d; }
   @media (max-width: 760px){
     .oyagaku-band .inner{ flex-direction:column; gap:1.8rem; }
     .oyagaku-band .flyer{ width:100%; max-width:380px; }
@@ -94,6 +109,7 @@
     .oyagaku-band.top .tx{ text-align:left; }
     .oyagaku-band.top h3{ font-size:1.25rem; }
     .oyagaku-band.top .date{ font-size:.82rem; }
+    .oyagaku-band.top .date .st{ display:block; width:fit-content; margin:.2rem 0 .35rem; }
     .oyagaku-band.top .free{ font-size:.78rem; padding:.24rem .8rem; }
     .oyagaku-band.top .more{ margin-top:.9rem; padding:.6rem 1.3rem; font-size:.88rem; }
   }
@@ -133,14 +149,15 @@
 <div class="oyagaku-band top">
   <a class="inner" href="oyagaku.html">
     <div class="flyer">
-      <img src="assets/oyagaku-flyer.jpg" alt="親学2026 秋 チラシ — 常識を手放すと、子どもは伸びはじめる。" width="1200" height="1697" loading="lazy">
+      <img src="assets/oyagaku-flyer_2.jpg" alt="親学2026 秋 第2回（11月29日）チラシ" width="1241" height="1755" loading="lazy">
     </div>
     <div class="tx">
       <p class="kicker">教育講演会</p>
       <h3>親学2026 秋<br><em>常識を手放すと、<br>子どもは伸びはじめる。</em></h3>
       <p class="date">
-        <b>第1回</b>10月18日（日）14:00 — 15:45<br>
-        <b>第2回</b>11月29日（日）14:00 — 15:45
+        <span class="ln done"><b>第1回</b>10月18日（日）14:00 — 15:45<span class="st">終了・満員御礼</span></span>
+        <span class="ln"><b>第2回</b>11月29日（日）14:00 — 15:45<span class="st">受付中・年内最終回</span></span>
+        <span class="ln dl">申込〆切：11月23日（月）</span>
       </p>
       <p><span class="free">参加費 無料</span></p>
       <span class="more">詳しくはコチラ →</span>
