@@ -170,44 +170,43 @@ section.tight { padding-top: calc(var(--space-section) * .5); }
 .card a.more:hover { color: var(--color-accent); letter-spacing: 0.05em; }
 
 /* ---------- 特集レイアウト（注目コンテンツを非対称で強調） ---------- */
-.feature-grid { display: grid; grid-template-columns: 1.45fr 1fr; gap: 1.5rem; align-items: stretch; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: stretch; }
 @media (max-width: 860px) { .feature-grid { grid-template-columns: 1fr; } }
-.feature-side { display: grid; gap: 1.5rem; grid-template-rows: 1fr 1fr; }
 .feature-main {
   position: relative; overflow: hidden;
   background: linear-gradient(140deg, #3d4d70 0%, #2c3852 70%, #232c42 100%);
   color: #f2eee2; border-radius: var(--radius);
-  padding: clamp(2.2rem, 5vw, 3.4rem);
-  display: flex; flex-direction: column; justify-content: flex-end;
-  min-height: 420px;
+  padding: 2.2rem 1.8rem;
+  display: flex; flex-direction: column;
   box-shadow: var(--shadow-soft);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .feature-main:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.feature-main > div { display: flex; flex-direction: column; flex: 1; }
 .feature-main::before {
-  content: "三"; position: absolute; top: -0.18em; right: 0.05em;
-  font-size: 17rem; line-height: 1; color: rgba(242, 238, 226, 0.05);
+  content: "三"; position: absolute; top: -0.12em; right: 0.04em;
+  font-size: 8.5rem; line-height: 1; color: rgba(242, 238, 226, 0.05);
   font-family: var(--font-serif); pointer-events: none;
 }
 .feature-main .badge {
-  position: absolute; top: 1.6rem; left: 1.8rem;
+  align-self: flex-start; margin-bottom: 0.9rem;
   font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 0.2em;
   color: #f2eee2; background: var(--color-accent);
   padding: 0.35rem 0.9rem; border-radius: 999px;
 }
-.feature-main .kicker { font-size: 0.8rem; letter-spacing: 0.28em; color: #b9c0d4; }
-.feature-main h3 { font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: 0.12em; line-height: 1.5; margin-top: 0.7rem; font-weight: 600; }
+.feature-main .kicker { font-size: 0.72rem; letter-spacing: 0.2em; color: #b9c0d4; }
+.feature-main h3 { font-size: 1.45rem; letter-spacing: 0.1em; line-height: 1.55; margin-top: 0.5rem; font-weight: 600; }
 .feature-main .excerpt {
-  margin-top: 1.3rem; font-size: 0.95rem; line-height: 2; color: #d5d3c6;
-  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  margin-top: 1rem; font-size: 0.95rem; line-height: 1.95; color: #d5d3c6; flex: 1;
+  display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden;
 }
-.feature-main a.more {
-  margin-top: 1.8rem; align-self: flex-start; text-decoration: none;
-  color: #f2eee2; font-family: var(--font-sans); font-size: 0.9rem; letter-spacing: 0.08em;
-  border: 1px solid rgba(242,238,226,.5); border-radius: 999px; padding: 0.7rem 1.7rem;
+.feature-main .more {
+  margin-top: 1.6rem; align-self: flex-start; text-decoration: none;
+  color: #f2eee2; font-family: var(--font-sans); font-size: 0.88rem; letter-spacing: 0.08em;
+  border: 1px solid rgba(242,238,226,.5); border-radius: 999px; padding: 0.55rem 1.4rem;
   transition: background var(--transition), border-color var(--transition);
 }
-.feature-main a.more:hover { background: var(--color-accent); border-color: var(--color-accent); }
+.feature-main:hover .more { background: var(--color-accent); border-color: var(--color-accent); }
 
 /* リスト（目次・一覧） */
 .index-list { list-style: none; max-width: var(--measure); margin: 3rem auto 0; padding: 0 1.25rem; }
