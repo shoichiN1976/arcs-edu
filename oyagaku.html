@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>親学2026 秋 — 常識を手放すと、子どもは伸びはじめる。｜教育研究所ARCS</title>
-<meta name="description" content="管野淳一 教育講演会「親学2026 秋」。10月18日(日)・11月29日(日)、塾クセジュ柏教室にて開催。参加費無料、お申し込み受付中。">
+<meta name="description" content="管野淳一 教育講演会「親学2026 秋」。第1回は満員御礼。第2回（年内最終回）は11月29日(日)、塾クセジュ柏教室にて。参加費無料、お申し込み受付中（11/23締切）。">
 <meta property="og:title" content="親学2026 秋 — 常識を手放すと、子どもは伸びはじめる。">
-<meta property="og:description" content="管野淳一が40年の現場経験から語る、全2回の子育てセミナー。10/18(日)・11/29(日) 塾クセジュ柏教室。参加費無料。">
+<meta property="og:description" content="管野淳一 教育講演会「親学2026 秋」。第1回は満員御礼。第2回（年内最終回）は11月29日(日)、塾クセジュ柏教室にて。参加費無料、お申し込み受付中（11/23締切）。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://arcs-edu.com/oyagaku.html">
 <meta property="og:image" content="https://arcs-edu.com/assets/oyagaku-og.jpg">
@@ -106,6 +106,34 @@
   }
   .oy-free p{ font-size:.82rem; line-height:1.85; letter-spacing:.01em; }
 
+  /* ===== お知らせ（第1回 満員御礼 → 第2回 受付中） ===== */
+  .oy-notice{ background:var(--cream); padding:1.8rem 0 .2rem; }
+  .oy-notice .box{
+    background:#fff; border:2px solid var(--red); border-radius:10px;
+    padding:1.4rem 1.7rem 1.5rem;
+    box-shadow:0 2px 8px rgba(43,39,35,.10);
+  }
+  .oy-notice .hd{
+    display:inline-block; margin:0; background:var(--red); color:#fff;
+    font-weight:800; font-size:.74rem; letter-spacing:.16em;
+    padding:.25rem .9rem; border-radius:3px;
+  }
+  .oy-notice p.t1{ margin:.95rem 0 0; font-size:.95rem; line-height:1.9; color:var(--ink); }
+  .oy-notice p.t2{
+    margin:.75rem 0 0; font-size:clamp(1rem,2.9vw,1.14rem); font-weight:800;
+    line-height:1.85; color:var(--ink);
+  }
+  .oy-notice b{ color:var(--red); font-weight:900; }
+  .oy-notice .go{
+    display:inline-block; margin-top:.8rem; min-height:44px; line-height:44px;
+    font-weight:800; font-size:.95rem; color:var(--red);
+    letter-spacing:.04em; text-decoration:none;
+  }
+  @media (max-width: 560px){
+    .oy-notice{ padding:1.4rem 0 .2rem; }
+    .oy-notice .box{ padding:1.2rem 1.2rem 1.3rem; }
+  }
+
   /* ===== キャッチ（弁柄の帯） ===== */
   .oy-catch{
     background:var(--red); color:#fff; position:relative;
@@ -197,6 +225,17 @@
     color:inherit; padding:0 .1em;
   }
   .oy-ses .body p{ margin:.7rem 0 0; font-size:.93rem; line-height:1.85; color:var(--ink2); }
+  /* 回ごとの状態バッジ */
+  .oy-ses .body p.oy-sbadge{
+    display:inline-block; margin:0 0 .85rem; color:#fff; background:var(--red);
+    font-weight:800; font-size:.76rem; line-height:1.6; letter-spacing:.14em;
+    padding:.3rem 1rem; border-radius:99px; white-space:nowrap;
+  }
+  /* 終了回：バッジは読めるまま、中身だけ薄く */
+  .oy-ses.is-done .day,
+  .oy-ses.is-done .body h3,
+  .oy-ses.is-done .body p:not(.oy-sbadge){ opacity:.6; }
+  .oy-ses.is-open{ box-shadow:0 0 0 2px var(--red), 0 4px 14px rgba(43,39,35,.14); }
   .oy-single{
     text-align:center; font-size:1rem; font-weight:800; color:var(--red);
     letter-spacing:.05em; margin:1.8rem 0 0;
@@ -356,6 +395,18 @@
     </aside>
   </section>
 
+  <!-- ▼ お知らせ -->
+  <section class="oy-notice">
+    <div class="in">
+      <div class="box">
+        <p class="hd">お知らせ</p>
+        <p class="t1">第1回（10月18日）は、おかげさまで<b>満員御礼</b>となりました。<br>ご参加くださった皆さま、ありがとうございました。</p>
+        <p class="t2">ただいま <b>第2回（11月29日・年内最終回）</b>のお申し込みを受付中です。</p>
+        <a class="go" href="#apply">第2回のお申し込みはこちら →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ▼ キャッチ -->
   <section class="oy-catch">
     <h2>常識を手放すと、<br><em>子どもは伸びはじめる。</em></h2>
@@ -378,7 +429,7 @@
     <!-- ▼ プログラム -->
     <div class="oy-hd"><span>program</span><i></i></div>
     <div class="oy-prog">
-      <article class="oy-ses">
+      <article class="oy-ses is-done">
         <div class="day">
           <span class="no">第 1 回</span>
           <p class="md">10<small>月</small>18<small>日</small></p>
@@ -386,11 +437,12 @@
           <p class="tm">14:00-15:45</p>
         </div>
         <div class="body">
+          <p class="oy-sbadge">終了・満員御礼</p>
           <h3><mark>「いい親」をやめると、</mark><br>子どもは伸びる</h3>
           <p>熱心な親ほど陥りやすい関わり方を、ひとつずつ分解していきます。手放してよいもの、手放すべきものはどこにあるのか。良かれと思って続けてきたことを、いったん棚に置いてみる時間です。</p>
         </div>
       </article>
-      <article class="oy-ses">
+      <article class="oy-ses is-open">
         <div class="day">
           <span class="no">第 2 回</span>
           <p class="md">11<small>月</small>29<small>日</small></p>
@@ -398,6 +450,7 @@
           <p class="tm">14:00-15:45</p>
         </div>
         <div class="body">
+          <p class="oy-sbadge">受付中・年内最終回</p>
           <h3><mark>「勉強しなさい」が</mark><br>効かない理由</h3>
           <p>やる気は、促して出るものではありません。条件が揃ったときに、ひとりでに生まれるものです。その仕組みを解きほぐし、家庭で今日から変えられることを具体的にお伝えします。</p>
         </div>
@@ -409,12 +462,12 @@
     <div class="oy-hd"><span>outline</span><i></i></div>
     <div class="oy-info">
       <dl>
-        <div class="r"><dt>日 程</dt><dd>2026年10月18日（日）14:00 — 15:45<br>2026年11月29日（日）14:00 — 15:45<span class="s">開場は各回13:45を予定しています。</span></dd></div>
+        <div class="r"><dt>日 程</dt><dd>2026年10月18日（日）14:00 — 15:45（終了・満員御礼）<br>2026年11月29日（日）14:00 — 15:45<span class="s">開場は各回13:45を予定しています。</span></dd></div>
         <div class="r"><dt>会 場</dt><dd>塾クセジュ柏教室<span class="s">千葉県柏市明原2-6-1</span></dd></div>
         <div class="r"><dt>対 象</dt><dd>小学生〜高校生のお子様をお持ちの保護者の方</dd></div>
         <div class="r"><dt>参加費</dt><dd><span class="oy-badge">無 料</span></dd></div>
-        <div class="r"><dt>定 員</dt><dd>先着順<span class="s">席に限りがございます。定員になり次第、受付を終了いたします。</span></dd></div>
-        <div class="r"><dt>申込〆切</dt><dd>各回の開催日の10日前</dd></div>
+        <div class="r"><dt>定 員</dt><dd>50名程度・先着順<span class="s">席に限りがございます。定員になり次第、受付を終了いたします。</span></dd></div>
+        <div class="r"><dt>申込〆切</dt><dd>11月23日（月）<span class="s">第2回（11月29日）のお申し込み締切です。</span></dd></div>
         <div class="r"><dt>主 催</dt><dd>一般社団法人 教育研究所ARCS</dd></div>
         <div class="r"><dt>お問い合わせ</dt><dd>sdn@arcs-edu.com</dd></div>
       </dl>
@@ -443,7 +496,7 @@
           <p class="cau">
             パソコンでご覧の方は、QRコードをスマートフォンで読み取ると、お手元でご記入いただけます。<br>
             <b>※ 席に限りがございます。定員になり次第、受付を終了します。</b><br>
-            ※ 申込〆切：各回の開催日の10日前
+            ※ 申込〆切：11月23日（月）
           </p>
         </div>
       </div>
@@ -465,7 +518,7 @@
       </div>
     </div>
 
-    <p class="oy-dl"><a href="assets/oyagaku2026aki.pdf" target="_blank" rel="noopener">チラシ（PDF）を見る</a></p>
+    <p class="oy-dl"><a href="assets/oyagaku2026aki_2.pdf" target="_blank" rel="noopener">チラシ（PDF）を見る</a></p>
 
   </div>
 </main>
@@ -484,7 +537,7 @@
       <h5>教育研究所ARCS</h5>
       <p class="small">一般社団法人 教育研究所ARCS<br>Act Research Counsel Store</p>
       <div class="sns">
-        <a href="#">YouTube</a>
+        <a href="https://www.youtube.com/@arcs9384" target="_blank" rel="noopener">YouTube</a>
         <a href="#">Instagram</a>
         <a href="#">Facebook</a>
       </div>
