@@ -175,7 +175,6 @@ section.tight { padding-top: calc(var(--space-section) * .5); }
 .card-video:hover .thumb img { transform: scale(1.03); }
 .card-video .thumb .play { position: absolute; right: 0.8rem; bottom: 0.8rem; width: 44px; height: 44px; border-radius: 50%; background: rgba(0,0,0,0.55); box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
 .card-video .thumb .play::after { content: ""; position: absolute; left: 17px; top: 13px; border-style: solid; border-width: 9px 0 9px 15px; border-color: transparent transparent transparent #fff; }
-.card-video .thumb .latest { position: absolute; left: 0.8rem; bottom: 0.8rem; font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 0.14em; padding: 0.25rem 0.6rem; background: var(--color-accent); color: #fff; border-radius: 2px; }
 
 /* ---------- 特集レイアウト（注目コンテンツを非対称で強調） ---------- */
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: stretch; }
