@@ -169,6 +169,14 @@ section.tight { padding-top: calc(var(--space-section) * .5); }
 }
 .card a.more:hover { color: var(--color-accent); letter-spacing: 0.05em; }
 
+/* 動画カード：最新回サムネ */
+.card-video .thumb { display: block; position: relative; margin: -2.2rem -1.8rem 1.4rem; border-radius: var(--radius) var(--radius) 0 0; overflow: hidden; aspect-ratio: 16 / 9; background: #222; }
+.card-video .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--transition); }
+.card-video:hover .thumb img { transform: scale(1.03); }
+.card-video .thumb .play { position: absolute; left: 50%; top: 50%; width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 50%; background: rgba(0,0,0,0.55); box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+.card-video .thumb .play::after { content: ""; position: absolute; left: 22px; top: 17px; border-style: solid; border-width: 11px 0 11px 18px; border-color: transparent transparent transparent #fff; }
+.card-video .thumb .latest { position: absolute; left: 0.8rem; top: 0.8rem; font-family: var(--font-sans); font-size: 0.72rem; letter-spacing: 0.14em; padding: 0.25rem 0.6rem; background: var(--color-accent); color: #fff; border-radius: 2px; }
+
 /* ---------- 特集レイアウト（注目コンテンツを非対称で強調） ---------- */
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: stretch; }
 @media (max-width: 860px) { .feature-grid { grid-template-columns: 1fr; } }
